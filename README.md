@@ -14,7 +14,8 @@ Full.Uber.2019.txt, Fullmat.2019.txt, Index.Flat.txt, originalpred.txt, and Stud
 The following input files that represent the data of the samples to be predicted should also be included in the working directory.
 
 Sample.annot  (an annotation file for the samples)
-mut.genelist.txt  (the list of GeneIDs for which mutations were available.)
+
+mut.genelist.txt  (the list of GeneIDs for which mutations were available)
 
 Mutation.flat.txt  ( the list of mutations found on each sample)
 
