@@ -11,17 +11,26 @@ Trialrun.R is the main script that imports the necessary files, runs the predict
 
 Full.Uber.2019.txt, Fullmat.2019.txt, Index.Flat.txt, originalpred.txt, and Study,sampR.txt are files related to training set.  These should all be included in the working directory where Trialrun.R is sourced.  At the top of this code are a number of flags that should be set in order to customize the run to a particular data set.
 
-Also to be included in this working directory are the following input files that represent the data of the samples to be predicted
+The following input files that represent the data of the samples to be predicted should also be included in the working directory.
+
 Sample.annot  (an annotation file for the samples)
+
 mut.genelist.txt  (the list of GeneIDs for which mutations were available)
+
 Mutation.flat.txt  ( the list of mutations found on each sample)
+
 Copy flat.txt     (The list of copy number changes found in each sample, only needed if copy number is available)
+
 CGH.genelist.txt     (The list of genesIDs for which copy number data is available. only used if copy number is available)
+
 Arm.file.txt (The list of copy number changes on chromosomal arms,  This file is optional)
 
-Once run, the algorithm will output 3 files
+Once run, the algorithm will output 3 files:
+
 Result.txt    (The results of the predictor)
+
 Compare.txt (The accuracy of the predictors on the training data.  This is useful in determining the extent to which the incomplteness of data my affect preformance)
+
 warn.txt  (a file indicating possible issues with the input data)
 
 Example input and output files are included in separate folders.  For a complete discussion of the algorithm and the format of the input files users are directed to https://llmpp.nih.gov/lymphgen/LymphGenInstructions.pdf?v=1583520112
